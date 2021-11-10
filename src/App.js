@@ -1,23 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bulma/css/bulma.min.css';
+import UserList  from './Components/Users/UserList';
+
+
+/* 
+
+you will display each 'USER' in a table. 
+When the user selects a 'USER' in the table, 
+it will display all of the 'POSTS' that were 
+created by that 'USER'.
+
+*/
 
 function App() {
+
+
+  const users = ['Tom', 'Mary', 'Paul'];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App section">
+
+    
+      <UserList users={users}/>
+
+
+
+      
     </div>
   );
 }
