@@ -2,29 +2,11 @@ import React from "react"
 import { v4 as uuidv4 } from 'uuid';
 import Post from './Post'
 
-const PostList = () => {
-
-    const posts = [
-        {
-            title:'Favorite Dogs'
-        },
-        {
-            title:'Favorite Cats'
-        },
-        {
-            title:'Favorite Birds'
-        }
-    ]
-
+const PostList = ({posts}) => {
 
     return (
         <div>
-            Posts:
-
-            <ul>
-                {posts.map(post=>(<Post key={uuidv4()} title={post.title}/>))}
-            </ul>
-
+            {posts.map(post=>(<Post key={uuidv4()} post={post}/>))}
         </div>
     )
 }
