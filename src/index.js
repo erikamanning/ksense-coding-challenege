@@ -1,18 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './Components/Core/App';
 import reportWebVitals from './reportWebVitals';
 import {
   BrowserRouter,
   Routes,
   Route
 } from "react-router-dom";
-
+import Home from './Components/Core/Home'
 import UserList from './Components/Users/UserList'
 import User from './Components/Users/User'
-
-const users = ['Tom', 'Mary', 'Paul'];
 
 
 ReactDOM.render(
@@ -20,8 +18,9 @@ ReactDOM.render(
       <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} >
-          <Route path="users" element={<UserList users={users} />}/>
-          <Route path="users/:username" element={<User />} />
+          <Route path="home" element={<Home />}/>
+          <Route path="users" element={<UserList />}/>
+          <Route path="users/:userId" element={<User />} />
           <Route
             path="*"
             element={
