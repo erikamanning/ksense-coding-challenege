@@ -3,10 +3,37 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
+
+import UserList from './Components/Users/UserList'
+import User from './Components/Users/User'
+
+const users = ['Tom', 'Mary', 'Paul'];
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+      <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />} >
+          <Route path="users" element={<UserList users={users} />}/>
+          <Route path="users/:username" element={<User />} />
+          <Route
+            path="*"
+            element={
+              <main style={{ padding: "1rem" }}>
+                <p>There's nothing here!</p>
+              </main>
+            }
+          />
+        </Route>      
+      </Routes>      
+    </BrowserRouter>
+
   </React.StrictMode>,
   document.getElementById('root')
 );
