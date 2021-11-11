@@ -1,7 +1,6 @@
 import './App.css';
 import 'bulma/css/bulma.min.css';
-import UserList  from './Components/Users/UserList';
-
+import { Outlet, Link } from 'react-router-dom';
 
 /* 
 
@@ -14,18 +13,15 @@ created by that 'USER'.
 
 function App() {
 
-
-  const users = ['Tom', 'Mary', 'Paul'];
-
   return (
     <div className="App section">
 
-    
-      <UserList users={users}/>
+  <h1>Demo</h1>
+      <nav style={{ borderBottom: 'solid 1px', paddingBottom: '1rem' }}>
+        <Link to="/users">Users</Link> |{' '}
+      </nav>
+      <Outlet />
 
-
-
-      
     </div>
   );
 }
