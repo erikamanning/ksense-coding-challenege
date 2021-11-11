@@ -1,6 +1,8 @@
 import './App.css';
 import 'bulma/css/bulma.min.css';
-import { Outlet, Link } from 'react-router-dom';
+import Navigation from './Navigation'
+import TopInfoBar from './TopInfoBar'
+
 
 /* 
 
@@ -16,11 +18,8 @@ function App() {
   return (
     <div className="App section">
 
-  <h1>Demo</h1>
-      <nav style={{ borderBottom: 'solid 1px', paddingBottom: '1rem' }}>
-        <Link to="/users">Users</Link> |{' '}
-      </nav>
-      <Outlet />
+    <TopInfoBar/>
+    <Navigation />
 
     </div>
   );
