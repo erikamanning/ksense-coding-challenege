@@ -1,13 +1,20 @@
 import React from "react"
 import './UserListItem.css'
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-const UserListItem = ( {username}) => {
+const UserListItem = ( {username,userId}) => {
+
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+
+        navigate(`/users/${userId}`);
+    }
 
     return (
-        <tr className='User'>
+        <tr className='User' onClick={handleClick}>
             <td>
-                <Link to={`/users/${username}`}>{username}</Link>
+                {username}
             </td>
         </tr>
     )
