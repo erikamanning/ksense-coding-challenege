@@ -1,4 +1,3 @@
-import './App.css';
 import 'bulma/css/bulma.min.css';
 import Navigation from './Navigation'
 import TopInfoBar from './TopInfoBar'
