@@ -28,6 +28,6 @@ This is a simple application that lets you view a list of users and then view th
     ```
 
 ## Thanks!
-I know you guys must have a ton of application to go through. I just wanted to say thanks for taking the time to look at mine! Good luck in the search.
+I know you guys must have a ton of applications to go through. I just wanted to say thanks for taking the time to look at mine! Good luck in the search.
 
 Erika
