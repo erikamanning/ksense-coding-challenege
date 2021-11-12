@@ -9,7 +9,9 @@
 
 ## About
 
-This is a simple application that lets you view a list of users and then view their posts by clicking on a user. I chose to use React since I am comfortable using it, and prefer it over Vanilla JS. I hope you enjoy!
+This is a simple application that lets you view a list of users and then view their posts by clicking on a user. I chose to use React since I am comfortable using it, and prefer it over Vanilla JS. I hope you like it!
+
+[Try the App Here](https://emanning-ksense-challenge.surge.sh/) 
 
 ## Installation
 1. Clone Repo.
