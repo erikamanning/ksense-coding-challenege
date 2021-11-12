@@ -10,7 +10,7 @@ const TopInfoBar = () => {
             <div className='level mb-0'>
                 <div className="level-left">
                     <div className="level-item">
-                        <div className="container">
+                        <div className="container has-text-centered-mobile">
                             <p className="subtitle is-5">
                                 <strong>Coding Challenge</strong>
                             </p>
@@ -24,7 +24,7 @@ const TopInfoBar = () => {
                 <div className="level-right">
                     <div className="level-item">
                         <div className="container has-text-centered">
-                            <figure className="image is-128x128">
+                            <figure className="image is-inline-block is-128x128">
                                 <img className='is-rounded' src={profilePic} alt="profile-pic" />
                             </figure>
                             <p className='mt-2'><strong>Erika Manning</strong></p>
